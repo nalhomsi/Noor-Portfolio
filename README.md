@@ -6,4 +6,4 @@ Personal portfolio page of Noor Alhomsi, coding student and photography enthusia
 
 Repository can be found at: https://github.com/nalhomsi/Noor-Portfolio
 
-Published site can be found at:
+Published site can be found at: https://nalhomsi.github.io/Noor-Portfolio/
