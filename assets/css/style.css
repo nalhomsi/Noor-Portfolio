@@ -16,7 +16,7 @@ body {
 	min-height: calc(100vh - 264px);
 }
 
-/* Main Page Styling */
+/* Main Page*/
 
 h1, h2 {
 	font-family:Verdana, Geneva, Tahoma, sans-serif;
@@ -59,7 +59,7 @@ header {
 }
 
 nav {
-	float: right;
+	margin-right: 20 px;
 }
 
 nav ul {
@@ -85,10 +85,10 @@ nav ul li:first-child a {
 }
 
 .wrapper {
-	width: 960px;
-	margin: 0 auto;
-	clear: both;
-	overflow: hidden;
+display: flex;
+justify-content: space-between;
+align-items: center;
+margin-right: 20px;
 }
 
 footer {
@@ -180,9 +180,9 @@ input[type=submit] {
 
 .work {
   position: relative;
-  float: right;
-  width: 274px;
-  margin: 20px 0 25px;
+  float: left;
+  width: 215px;
+  margin: 15px 0 20px;
   overflow: auto;
 }
 
@@ -229,106 +229,25 @@ nav a:hover {
 
 /* MEDIA QUERY FOR SMALLER DESKTOP SCREENS AND SMALLER */
 @media screen and (max-width: 980px) {
-	header {
-	  padding-bottom: 0;
-	  justify-content: center;
-	  position: relative;
-	}
+#container {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-evenly;
+	align-items: center;
+}
+}
   
-	header h1 {
-	  width: 100%;
-	  text-align: center;
-	}
-  
-	header nav ul {
-	  margin-top: 20px;
-	  width: 100%;
-	  justify-content: center;
-	}
-  
-	header nav ul li a {
-	  font-size: 20px;
-	}
-  
-	footer h2, footer div {
-	  text-align: center;
-	  width: 100%;
-	}
-  
-	.wrapper{
-	  width: 100%;
-	}
+/* MEDIA QUERY FOR TABLETS AND SMALLER */
+@media screen and (max-width: 768px) {
+#container {
+	justify-content: start;
+	align-items: flex-start;
+	display:block;
+}
+}
 	
-	.module {
-	  text-align: center;
-	}
   
-	.me {
-	  width: 80%;
-	}
-	
-	.work {
-	  flex: 0 70%;
-	}
-	
-	.work h3{
-	  flex: 1 100%;
-	}
-  }
-  
-  /* MEDIA QUERY FOR TABLETS AND SMALLER */
-  @media screen and (max-width: 768px) {
-	section {
-	  padding: 30px 15px;
-	}
-  
-	.wrapper {
-	  flex: 1 100%;
-	  text-align: center;
-	}
-  
-	.module {
-	  flex: 2 100%;
-	  text-align: center;
-	  justify-content: center;
-	}
-  
-	.me {
-	  flex: 0 32%;
-	  margin-right: 0;
-	  margin-top: 15px;
-	  margin-bottom: 15px;
-	}
-  
-	.work {
-	  flex: 100%;  
-	}
-  
-	.work h3 {
-	  display: block;
-	}
-  }
-  
-  /* MEDIA QUERY FOR MOBILE PHONES AND SMALLER */
-  @media screen and (max-width: 575px) {
-  
-	.section-title {
-	  width: 95%;
-	}
-  
-	.wrapper {
-	  width: 100%;
-	}
-  
-	.module {
-	  flex: 0 100%;
-	}
-  
-	.me * {
-	  flex: 0 100%;
-	}
-  
-	.work {
-	  order: 3;
-	}
-  }
+ /* MEDIA QUERY FOR MOBILE PHONES AND SMALLER */
+@media screen and (max-width: 575px) {
+
+}
